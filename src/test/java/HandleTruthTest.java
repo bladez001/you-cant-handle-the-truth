@@ -32,6 +32,18 @@ public class HandleTruthTest {
     }
     private static List<TreeMap<Integer, Set<String>>> getTestCases() {
         List<TreeMap<Integer, Set<String>>> testCases = new ArrayList<>();
+        //Test case 1
+        TreeMap<Integer, Set<String>> expected1 = new TreeMap<>();
+        Set<String> string1 = new HashSet<>();
+        string1.add("Hello");
+        string1.add("I");
+        string1.add("am");
+        string1.add("the");
+        string1.add("mail");
+        string1.add("man");
+        expected1.put(1, string1);
+        testCases.add(expected1);
+        
         return testCases;
     }
 }
