@@ -22,5 +22,16 @@ public class HandleTruthTest {
                 "drift drift drift drift drift",
                 "one two two two three two four two",
         };
+        List<TreeMap<Integer, Set<String>>> testCases = getTestCases();
+
+        for (int i = 0; i < testCases.size(); i++) {
+            TreeMap<Integer, Set<String>> actual = HandleTruth.wordCount(msg[i]);
+            TreeMap<Integer, Set<String>> expected = testCases.get(i);
+            assertEquals(expected, actual);
+        }
+    }
+    private static List<TreeMap<Integer, Set<String>>> getTestCases() {
+        List<TreeMap<Integer, Set<String>>> testCases = new ArrayList<>();
+        return testCases;
     }
 }

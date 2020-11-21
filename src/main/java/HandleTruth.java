@@ -24,7 +24,7 @@ public class HandleTruth {
             values.add(entry.getKey());
             sortedMap.put(entry.getValue(), values);
         }
-
+        System.out.println(sortedMap);
         return sortedMap;
     }
 }
